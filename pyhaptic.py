@@ -54,7 +54,7 @@ class HapticInterface:
         else:
             #throw communication exception?
             pass
-        print 'Version Queried: ' + str(ver)
+        logging.debug( 'Version Queried:' + str(ver) )
         return ver
     def qry_all(self):
     	self.__send("QRY ALL\n")
